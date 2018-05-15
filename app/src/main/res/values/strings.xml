@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BuzzmoveTest</string>
+    <string name="google_api_key">AIzaSyDEzsjXa5BMafYGCBvpqJqdY_Q99OL5Gkk</string>
+    <string name="title_activity_maps">Search results</string>
+    <string name="google_nearby_webkey">AIzaSyAedv9e9kV-TcflNs_RhL8U95GMUl2OmDM</string>
+
+</resources>

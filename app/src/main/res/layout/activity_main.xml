@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="60dp"
+           android:layout_alignParentRight="true"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.5"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/places_ic_search"
+            android:padding="2dp"
+            android:text="search"
+            android:textAllCaps="false" />
+
+    <EditText
+        android:id="@+id/place_et"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_toLeftOf="@+id/search_btn"
+        android:layout_weight="5"
+        android:background="@drawable/border"
+        android:hint="Enter a place to search"
+        android:paddingLeft="10dp"
+        android:textSize="14sp" />
+
+
+    <Button
+        android:id="@+id/map_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/place_et"
+        android:text="Show in map"
+    android:layout_margin="5dp"
+        android:visibility="gone"
+        android:textAllCaps="false"/>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/map_btn"
+        android:visibility="gone"/>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/map_btn"
+  />
+</RelativeLayout>
